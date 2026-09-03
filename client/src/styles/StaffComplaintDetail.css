@@ -1,0 +1,145 @@
+.staff-complaint-detail {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.staff-complaint-detail .detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.staff-complaint-detail .detail-header h1 {
+  margin: 0;
+}
+
+.staff-complaint-detail .badges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.staff-complaint-detail .detail-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.staff-complaint-detail .detail-main,
+.staff-complaint-detail .detail-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.staff-complaint-detail .detail-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.staff-complaint-detail .detail-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.staff-complaint-detail .info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.staff-complaint-detail .actions-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.staff-complaint-detail .btn-block {
+  width: 100%;
+}
+
+.staff-complaint-detail textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.staff-complaint-detail textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.staff-complaint-detail .comment-form {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.staff-complaint-detail .comments-list {
+  margin-bottom: 1.5rem;
+}
+
+.staff-complaint-detail .comment {
+  padding: 1rem;
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.staff-complaint-detail .comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.staff-complaint-detail .comment-header strong {
+  color: var(--text-dark);
+}
+
+.staff-complaint-detail .comment-header small {
+  color: var(--text-light);
+}
+
+.staff-complaint-detail .text-success {
+  color: var(--success-color);
+  font-weight: 500;
+}
+
+.staff-complaint-detail .text-muted {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .staff-complaint-detail .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-complaint-detail .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .staff-complaint-detail {
+    padding: 1rem;
+  }
+
+  .staff-complaint-detail .detail-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
