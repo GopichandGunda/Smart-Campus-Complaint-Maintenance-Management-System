@@ -1,0 +1,55 @@
+.create-complaint {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.create-complaint-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.create-complaint-card h1 {
+  margin-top: 0;
+}
+
+.create-complaint-card > p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.complaint-form {
+  margin-top: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.image-preview {
+  margin-top: 1rem;
+  max-width: 300px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .create-complaint {
+    padding: 1rem;
+  }
+
+  .create-complaint-card {
+    padding: 1.5rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

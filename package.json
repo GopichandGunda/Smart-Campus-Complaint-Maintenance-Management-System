@@ -1,0 +1,10 @@
+{
+  "name": "smart-campus-complaint-system",
+  "version": "1.0.0",
+  "description": "Smart Campus Complaint & Maintenance Management System",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
